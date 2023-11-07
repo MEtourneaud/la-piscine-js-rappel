@@ -1,7 +1,7 @@
 function Footer () {
     return (
         <footer>
-            <h2>Fin du site, il faut acheter maintenant !</h2>
+            <p>Fin du site, il faut acheter maintenant !</p>
         </footer>
     )
 }
