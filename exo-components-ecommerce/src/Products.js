@@ -1,12 +1,29 @@
 function Products() {
-  const productsFormDb = ["Billard Américain", "Sèche-linge", "Trotinette Electrique"]
+  const productsFormDb = [
+    {
+      title: "Billard Américain",
+      price: 800,
+      isPublished: true,
+    },
+    {
+      title: "Sèche-linge",
+      price: 300,
+      isPublished: true,
+    },
+    {
+      title: "Trotinette Electrique",
+      price: 500,
+      isPublished: true,
+    },
+  ]
 
   return (
     <div>
       {productsFormDb.map((product) => {
         return (
           <article>
-            <h2>{product}</h2>
+            <h2>{product.title}</h2>
+            <p>{product.price} €</p>
           </article>
         )
       })}
@@ -15,18 +32,3 @@ function Products() {
 }
 
 export default Products
-
-// <article>
-//     <h3>Billard Américain</h3>
-//     <p>800€</p>
-//   </article>
-
-//   <article>
-//     <h3>Sèche-linge</h3>
-//     <p>300€</p>
-//   </article>
-
-//   <article>
-//     <h3>Trotinette Electrique</h3>
-//     <p>500€</p>
-//   </article>
