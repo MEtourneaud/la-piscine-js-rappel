@@ -1,13 +1,20 @@
 function Header () {
-    const isUserLogged = false
+    const userLogged = {
+        firstName : "Mathieu",
+        lastName : "Etourneaud",
+        job : "Web Dev Junior"
+    }
+
+    const isUserLogged = true
     const itemsInCart = 2
+    
     return (
         <header>
             <h1>Super Ecommerce</h1>
             <nav>
                 <ul>
                     {isUserLogged ? (
-                        <li>Mathieu</li>
+                        <li>{userLogged.firstName} {userLogged.lastName}</li>
                     ) : ( 
                         <li>Veuillez vous connecter</li>
                     )}
