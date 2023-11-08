@@ -1,6 +1,6 @@
 function Products () {
     return (
-        <main>
+        <div>
             <article>
                 <h3>Billard Américain</h3>
                 <p>800€</p>
@@ -15,7 +15,7 @@ function Products () {
                 <h3>Trotinette Electrique</h3>
                 <p>500€</p>
             </article>
-        </main>
+        </div>
     )
 }
 
