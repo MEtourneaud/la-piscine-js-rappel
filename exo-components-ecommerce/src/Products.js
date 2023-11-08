@@ -1,9 +1,5 @@
 function Products() {
-  const productsFormDb = [
-    "Billard Américain",
-    "Sèche-linge",
-    "Trotinette Electrique",
-  ]
+  const productsFormDb = ["Billard Américain", "Sèche-linge", "Trotinette Electrique"]
 
   return (
     <div>
