@@ -21,18 +21,14 @@ function Products() {
     <div>
       {productsFormDb.map((product) => {
         return (
-          <article>
-            {product.isPublished ? (
-              <>
+          <>
+            {product.isPublished && (
+              <article>
                 <h2>{product.title}</h2>
                 <p>{product.price} €</p>
-              </>
-            ) : (
-              <>
-                <h2>Produit non-dispoible</h2>
-              </>
+              </article>
             )}
-          </article>
+          </>
         )
       })}
     </div>
