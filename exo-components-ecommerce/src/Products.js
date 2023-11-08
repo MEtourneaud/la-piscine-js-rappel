@@ -8,7 +8,7 @@ function Products() {
     {
       title: "Sèche-linge",
       price: 300,
-      isPublished: true,
+      isPublished: false,
     },
     {
       title: "Trotinette Electrique",
@@ -22,8 +22,16 @@ function Products() {
       {productsFormDb.map((product) => {
         return (
           <article>
-            <h2>{product.title}</h2>
-            <p>{product.price} €</p>
+            {product.isPublished ? (
+              <>
+                <h2>{product.title}</h2>
+                <p>{product.price} €</p>
+              </>
+            ) : (
+              <>
+                <h2>Produit non-dispoible</h2>
+              </>
+            )}
           </article>
         )
       })}
