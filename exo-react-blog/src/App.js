@@ -2,7 +2,8 @@ import Home from "./page/Home.jsx"
 import "./App.scss"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Contact from "./page/Contact.jsx"
-import Gallerie from "./page/Gallerie.jsx"
+import Profil from "./page/Profil.jsx"
+import Articles from "./page/Articles.jsx"
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/gallerie" element={<Gallerie />} />
+        <Route path="/profil" element={<Profil />} />
+        <Route path="/articles" element={<Articles />} />
       </Routes>
     </BrowserRouter>
   )

@@ -1,4 +1,6 @@
-import "./Articles.scss"
+import "../component/Articles.scss"
+import Footer from "../component/Footer"
+import Header from "../component/Header"
 
 function Articles() {
   const articles = [
@@ -63,21 +65,20 @@ function Articles() {
     },
   ]
 
-  const publishedArticle = articles.filter((article) => {
-    return article.isPublished === true
-  })
-  const lastPublishedArticle = publishedArticle.slice(-3)
-
   return (
-    <div>
-      {lastPublishedArticle.map((article) => {
+    <div className="App">
+    <Header />
+      {articles.map((article) => {
         return (
-          <article className="article">
-            <h3>{article.title}</h3>
-            <p>{article.price} €</p>
-          </article>
+          <>
+            <article className="article">
+              <h3>{article.title}</h3>
+              <p>{article.price} €</p>
+            </article>
+          </>
         )
       })}
+      <Footer />
     </div>
   )
 }

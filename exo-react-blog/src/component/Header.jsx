@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProfilMenu from "./ProfilMenu"
 import "./Header.scss"
 import canard from "./canard.png"
@@ -8,13 +9,15 @@ function Header() {
     <header className="Header">
       <h1>Mon mega blog !</h1>
       <img className="canard" src={canard} alt="Canard" />
-      <ul className="list">
-        <li>Home</li>
-        <li>Articles</li>
-        <li>Contact</li>
-        <li>Gallerie</li>
-        <ProfilMenu />
-      </ul>
+      <nav>
+        <ul className="list">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/articles">Articles</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/profil">Profil</Link></li>
+            <ProfilMenu />
+        </ul>
+      </nav>
     </header>
   )
 }
