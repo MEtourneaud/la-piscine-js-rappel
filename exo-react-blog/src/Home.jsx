@@ -1,5 +1,5 @@
 import Articles from "./Articles"
-import "./Home.css"
+import "./Home.scss"
 
 function Home() {
   return (

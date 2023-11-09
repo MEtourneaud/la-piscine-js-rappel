@@ -1,4 +1,4 @@
-import "./Articles.css"
+import "./Articles.scss"
 
 function Articles() {
   const articles = [
