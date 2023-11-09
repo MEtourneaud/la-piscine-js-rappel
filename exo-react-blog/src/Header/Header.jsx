@@ -12,6 +12,7 @@ function Header() {
         <li>Home</li>
         <li>Articles</li>
         <li>Contact</li>
+        <li>Gallerie</li>
         <ProfilMenu />
       </ul>
     </header>
