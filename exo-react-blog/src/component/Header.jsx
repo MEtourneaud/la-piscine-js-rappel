@@ -1,4 +1,4 @@
-import ProfilMenu from "../ProfilMenu"
+import ProfilMenu from "./ProfilMenu"
 import "./Header.scss"
 import canard from "./canard.png"
 

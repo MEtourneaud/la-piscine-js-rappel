@@ -1,8 +1,8 @@
-import Articles from "../Articles/Articles"
-import "./Home.scss"
+import Articles from "../component/Articles"
+import "../component/Home.scss"
 import "../App.scss"
-import Footer from "../Footer/Footer"
-import Header from "../Header/Header"
+import Footer from "../component/Footer"
+import Header from "../component/Header"
 
 function Home() {
   return (

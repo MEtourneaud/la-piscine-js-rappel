@@ -1,8 +1,8 @@
-import Home from "./Home/Home"
+import Home from "./page/Home.jsx"
 import "./App.scss"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Contact from "./Contact/Contact"
-import Gallerie from "./Gallerie/Gallerie"
+import Contact from "./page/Contact.jsx"
+import Gallerie from "./page/Gallerie.jsx"
 
 function App() {
   return (

@@ -1,7 +1,7 @@
-import Footer from "../Footer/Footer"
-import Header from "../Header/Header"
-import surprise from "./surprise.jpg"
-import "./Gallerie.scss"
+import Footer from "../component/Footer"
+import Header from "../component/Header"
+import surprise from "../component/surprise.jpg"
+import "../component/Gallerie.scss"
 
 
 

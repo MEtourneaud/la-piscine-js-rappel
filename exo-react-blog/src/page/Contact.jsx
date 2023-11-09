@@ -1,7 +1,7 @@
-import Footer from "../Footer/Footer"
-import Header from "../Header/Header"
+import Footer from "../component/Footer"
+import Header from "../component/Header"
 import "../App.scss"
-import "./Contact.scss"
+import "../component/Contact.scss"
 
 function Contact() {
     return(
