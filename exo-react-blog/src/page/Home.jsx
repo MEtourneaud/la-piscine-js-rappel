@@ -79,7 +79,7 @@ function Home() {
         <h2>Les trois derniers articles : </h2>
         {lastThreePublishedArticles.map((article) => {
           return (
-            <article className="article">
+            <article className="homeArticle">
               <h3>{article.title}</h3>
               <p>{article.price}e</p>
             </article>
