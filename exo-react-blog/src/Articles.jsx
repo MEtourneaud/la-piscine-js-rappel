@@ -1,3 +1,5 @@
+import "./Articles.css"
+
 function Articles() {
   const articles = [
     {
@@ -70,7 +72,7 @@ function Articles() {
     <div>
       {lastPublishedArticle.map((article) => {
         return (
-          <article>
+          <article className="article">
             <h3>{article.title}</h3>
             <p>{article.price} €</p>
           </article>

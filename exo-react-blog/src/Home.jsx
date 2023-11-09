@@ -1,4 +1,5 @@
 import Articles from "./Articles"
+import "./Home.css"
 
 function Home() {
   return (

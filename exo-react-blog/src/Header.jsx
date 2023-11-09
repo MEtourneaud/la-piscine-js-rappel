@@ -1,14 +1,15 @@
 import ProfilMenu from "./ProfilMenu"
+import "./Header.css"
 
 function Header() {
   return (
-    <header>
+    <header className="Header">
       <h1>Mon mega blog !</h1>
-      <ul>
-        <ProfilMenu />
+      <ul className="list">
         <li>Home</li>
         <li>Articles</li>
         <li>Contact</li>
+        <ProfilMenu />
       </ul>
     </header>
   )
