@@ -22,11 +22,7 @@ function Header() {
           )}
           <li>Home</li>
           <li>Products</li>
-          {itemsInCart > 0 ? (
-            <li>cart : {itemsInCart}</li>
-          ) : (
-            <li>Panier vide</li>
-          )}
+          {itemsInCart > 0 ? <li>cart : {itemsInCart}</li> : <li>Panier vide</li>}
         </ul>
       </nav>
     </header>
