@@ -1,0 +1,16 @@
+{isUserLogged ? (
+<li></li>
+) : (
+<li></li> )}
+
+{isUserLogged ? <li></li> : <li></li>}
+
+Utiliser ? si if else
+Sinon utiliser &&
+
+{isUserLogged && (
+<li></li>)
+
+===> Equivalent de if else avec jsx
+
+<> </> ==> balise vide = fragment
