@@ -1,5 +1,5 @@
-import Header from "../component/header/Header"
-import Footer from "../component/footer/Footer"
+import Header from "../../component/header/Header"
+import Footer from "../../component/footer/Footer"
 
 import "../component/Home.scss"
 
@@ -96,16 +96,18 @@ function Home() {
     return(
         <main>
             <Header />
-            <h1>Mes Petits Poneys</h1>
-            <div className="ponies-container">
-                {lastFiveMagicPoneys.map((poney) => {
-                    return(
-                        <article className="pony-container">
-                            <img className="pony" src={poney.img} alt=""></img>
-                            <p>{poney.name}</p>
-                        </article>
-                    )
-                })}
+            <div className="main">
+              <h1>Mes Petits Poneys</h1>
+              <div className="ponies-container">
+                  {lastFiveMagicPoneys.map((poney) => {
+                      return(
+                          <article className="pony-container">
+                              <img className="pony" src={poney.img} alt=""></img>
+                              <p>{poney.name}</p>
+                          </article>
+                      )
+                  })}
+              </div>
             </div>
             <Footer />
         </main>

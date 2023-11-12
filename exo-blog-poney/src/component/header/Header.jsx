@@ -7,10 +7,11 @@ function Header() {
             <nav>
                 <ul className="list">
                     <li><img className="logo menu" src="/img/logo.png" alt=""></img></li>
-                    <li className="menu"><Link to="/">Home</Link></li>
-                    <li className="menu"><Link to="/poneys">Poneys</Link></li>
-                    <li className="menu"><Link to="/about">A Propos</Link></li>
-                    <li className="menu"><Link to="/contact">Contact</Link></li>
+                    <li className="menu"><Link to="/" className="menu">Home</Link></li>
+                    <li className="menu"><Link to="/poneys" className="menu">Poneys</Link></li>
+                    <li className="menu"><Link to="/about" className="menu">A Propos</Link></li>
+                    <li className="menu"><Link to="/contact" className="menu">Contact</Link></li>
+                    <li className="menu"><Link to="/poneytalk" className="menu">PoneyTalk</Link></li>
                 </ul>
             </nav>
         </header>

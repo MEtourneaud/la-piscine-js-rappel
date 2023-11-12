@@ -1,5 +1,5 @@
-import Footer from "../component/footer/Footer";
-import Header from "../component/header/Header";
+import Footer from "../../component/footer/Footer";
+import Header from "../../component/header/Header";
 
 import "../component/About.scss"
 
@@ -14,9 +14,10 @@ function APropos() {
         <>
             <Header />
             <div className="poneyman">
+                <h1>Moi</h1>
                 <img src="/img/ponyman.jpg" alt=""></img>
                 <p>Salut, je suis {infos.author}, j'ai publié le site le {infos.published}, t'étais où ?</p>
-                <p>Tu me cherches ? Viens me trouver {infos.address}</p>
+                <p>Tu me cherches ? Viens me trouver {infos.address}.</p>
             </div>
             <Footer />
         </>
